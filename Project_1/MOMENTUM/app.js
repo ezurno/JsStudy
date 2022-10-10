@@ -19,13 +19,13 @@
 
 //======== getElement 방식 =========== //
 
-const title = document.querySelector(".hello h1");
+const h1 = document.querySelector(".hello h1");
 // .hello class 내 h1 를 가져옴
 // 값을 만족하는 값 하나만 가져옴
-console.log(title);
+console.log(h1);
 
-title.innerText = "Hello";
-console.log(title);
+h1.innerText = "Hello";
+console.log(h1);
 
 const titleAll = document.querySelectorAll(".hello h1");
 // 값을 만족하는 값 전부 가져옴
