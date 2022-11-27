@@ -5,42 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
     <title>PROJECT</title>
   </head>
 
   <body>
-    <form id="login_form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-      />
-      <button>LOG IN</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
+    <div class="background"></div>
 
-    <form id="todo_form">
-      <input
-        id="todo_input"
-        type="text"
-        placeholder="Write a To Do and Press Enter"
-        required
-      />
-    </form>
+    <div class="word">
+      <div class="text">
+        <form id="login_form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="what is your name?"
+          />
+          <button>LOG IN</button>
+        </form>
+        <h2 id="clock">00:00:00</h2>
+        <h1 id="greeting" class="hidden"></h1>
 
-    <ul id="todo_list"></ul>
+        <form id="todo_form">
+          <input
+            id="todo_input"
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
 
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
+        <ul id="todo_list"></ul>
 
-    <div id="weathers">
-      <span id="country"></span>
-      <span id="city"></span>
-      <span id="weather"></span>
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="weathers">
+          <span id="country"></span>
+          <span id="city"></span>
+          <span id="weather"></span>
+        </div>
+      </div>
     </div>
 
     <script src="js/greetings.js"></script>
